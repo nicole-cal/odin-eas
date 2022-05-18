@@ -1,0 +1,17 @@
+* {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    background-color: #ae84b0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 52px;
+}
+
+#example {
+    height: 25px;
+    width: 25px;
+    border: 2px solid black;
+    display: flex;
+    align-content: space-between;
+}
