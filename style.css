@@ -8,10 +8,34 @@ h1 {
     font-size: 52px;
 }
 
-#example {
-    height: 25px;
-    width: 25px;
+/* #grid {
+    background-color: magenta;
+    display: flex;
+    flex-direction: column;
+} */
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 864px;
+} 
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    background-color: goldenrod;
+    width: 50px;
+    height: 50px;
     border: 2px solid black;
     display: flex;
-    align-content: space-between;
+    align-items: center;
 }
+
+/* .box {
+    border: 2px solid mediumseagreen;
+    height: 25px;
+    width: 25px;
+} */
