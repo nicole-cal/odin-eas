@@ -17,12 +17,7 @@
        }
     }
   
-    //let hover = document.getElementById("container"); // works on grid using grid as ID
-    // how to get from grid to cell?
-  
-    //hover.addEventListener("mouseenter", func, false);
-
-    //function func() {
-    //hover.setAttribute("style", "background: magenta;");
-    //}  
-  
+  function newGrid() {
+    let howManySquares = prompt("How many squares would you like each side of the grid to be? \nFor example, entering 8 will produce an 8 x 8 grid.");
+    alert(howManySquares);
+  };
