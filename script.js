@@ -17,11 +17,20 @@
         cell.style.width = `${pixelSizeCell}px`;
         cell.style.height = `${pixelSizeCell}px`;
 
-         cell.addEventListener("mouseenter", func, false);
+        const randomColour = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+        const r = randomColour(0, 255);
+        const g = randomColour(0, 255);
+        const b = randomColour(0, 255);
+        const rgb = `rgb(${r}, ${g}, ${b})`;
+        console.log(rgb);
+
+        cell.addEventListener("mouseenter", func, false);
         function func() {
-          cell.setAttribute("style", "background: magenta;");
-          cell.style.width = `${pixelSizeCell}px`;
-         cell.style.height = `${pixelSizeCell}px`;
+        cell.style.backgroundColor = `${rgb}`;
+        cell.style.width = `${pixelSizeCell}px`;
+        cell.style.height = `${pixelSizeCell}px`;
+
+        
         }  
      } 
   } if ((howManySquares > 100) || (howManySquares < 1)) {
