@@ -24,6 +24,8 @@
          cell.style.height = `${pixelSizeCell}px`;
         }  
      } 
+  } if ((howManySquares > 100) || (howManySquares < 1)) {
+     alert("Please enter a value between 1 and 100.");
   }
 };
 
