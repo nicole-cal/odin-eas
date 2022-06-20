@@ -1,4 +1,5 @@
 // Need to fix opacity thing
+// Black is rgb(0,0,0)
 
 function newGrid() {
     let howManySquares = prompt("How many squares would you like each side of the grid to be, between 1 and 100? \nFor example, entering 8 will produce an 8 x 8 grid.");
@@ -19,28 +20,22 @@ function newGrid() {
         const r = randomColour(0, 255);
         const g = randomColour(0, 255);
         const b = randomColour(0, 255);
-        const rgb = `rgb(${r}, ${g}, ${b})`;
-        console.log(rgb);
+        const a = 1;
+        const rgba = `rgba(${r}, ${g}, ${b}, ${a})`;
+        console.log(rgba);
 
         cell.addEventListener("mouseenter", changeColour, false);
         function changeColour() {
-        cell.style.backgroundColor = `${rgb}`;
+        cell.style.backgroundColor = `${rgba}`;
         cell.style.width = `${pixelSizeCell}px`;
         cell.style.height = `${pixelSizeCell}px`;
-       }
+       } 
 
-        cell.addEventListener("mouseenter", addBlack, false);
-        function addBlack() {
-        cell.style.opacity = '80%'; // Need to fix this so goes in increments.
-        cell.style.width = `${pixelSizeCell}px`;
-        cell.style.height = `${pixelSizeCell}px`; 
-        }
-         
-     } 
   } if ((howManySquares > 100) || (howManySquares < 1)) {
      alert("Please enter a value between 1 and 100.");
   }
 
+ }
 };
 
 function refresh() {
